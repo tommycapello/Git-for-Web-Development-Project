@@ -3,11 +3,11 @@ link to finished codepen: https://codepen.io/tommycapello/pen/rNWMOGL
 
     1. What is Semantic HTML? 
 
-    Semantic HTML has meaning that can be interpreted by browsers and developers. It address the elements on the page by their relevance to the structure.
+    Semantic HTML has meaning that can be interpreted by browsers and developers. It addresses the elements on the page by their relevance to the structure.
 
     2. What is HTML used for? 
 
-    HTML is used for structuring a webpage. 
+    HTML is used for structuring a webpage.
 
     3. What is an attribute and where do we put it? 
 
@@ -27,7 +27,7 @@ link to finished codepen: https://codepen.io/tommycapello/pen/rNWMOGL
 
     7. What is an id? 
 
-    The HTML attibute is an attribute used to uniquely identify an element. It is typically used by JavaScript for manipulation.
+    The HTML attribute is an attribute used to uniquely identify an element. It is typically used by JavaScript for manipulation.
 
     8. What elements can I add an id to? 
 
@@ -47,11 +47,11 @@ link to finished codepen: https://codepen.io/tommycapello/pen/rNWMOGL
 
     12. How many times can I use the same class on a page? 
 
-    There is not limit how many times you can use the same class. You can use the same class on different elements.
+    There is no limit to how many times you can use the same class. You can use the same class on different elements.
 
     13. How do I get my link to open in a new tab?
 
-    In order for a link to open in a new tab, you can use the <a> tab. The syntax is <a href="www.url.com" target="_blank" rel="noopener noreferrer">
+    In order for a link to open in a new tab, you can use the <a> tag. The syntax is <a href="www.url.com" target="_blank" rel="noopener noreferrer">
     
     14. What is the alt attribute in the image tag used for? 
     
@@ -59,16 +59,16 @@ link to finished codepen: https://codepen.io/tommycapello/pen/rNWMOGL
 
     15. How do I reference an id?
 
-    You can reference an id using the syntax #idName. 
+    You can reference an id using the syntax #idName as a selector in CSS. 
     
-    16. What is the difference between a section and a div
+    16. What is the difference between a section and a div?
 
-    A section tag is a semantic tag becuase it provides information on what is including within it's contents. We would expect there to be a specific reason for the section to grouped together. 
-    The div tag is used primarily as a container for styling. It has not intrinsic meaning by itself.
+    A section tag is a semantic tag becuase it provides information on what is included within its contents. We would expect there to be a specific reason for the section to grouped together. 
+    The div tag is used primarily as a generic container for styling or manipulation by scripts. 
 
     17. What is CSS used for? 
 
-    CSS is used to style the elements of a webpage. It is used to arrange the data in a way to communicate with an end user.
+    CSS is used to style the elements of a webpage. It is used to arrange data in a way to communicate with an end user.
 
     18. How to do select an element? Example - every h2 on the page
 
@@ -77,6 +77,7 @@ link to finished codepen: https://codepen.io/tommycapello/pen/rNWMOGL
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
 
     The difference between a class and id is that a class can be more than once on a HTML document. The id should only reference a unique element on the page. The class attribute can be use to style mulitple elements.
+    You would use an id when selecting an element that appear only once on the page, such as a header or footer. A class can be used to select multiple elements and reuse their styling.
 
     20. How do we select classes in CSS?
 
@@ -84,34 +85,96 @@ link to finished codepen: https://codepen.io/tommycapello/pen/rNWMOGL
 
     21. How do we select a p element with a single class of “human”?
 
-    You should be able to select the p element by the .human {} syntax. This will style any "human" classes on the page. 
+    You should be able to select the p element with the following syntax .human {} syntax. This will style any "human" p classes on the page. 
 
     22. What is a parent child selector? When would this be useful?
-    
+
+    A parent child selector in CSS allows us to select elements within a specific parent. We can target and stylize specific elements of the child while preserving the other properties of their parent.
+
     23. How do you select all links within a div with the class of sidebar?
+
+    You can select links within a div with the class of "sidebar" with the following syntax .sidebar link {} . 
+
     24. What is a pseudo selector?
+
+    A psuedo selector is a keyword added to a selector in CSS that specifies a special state of the selected element.
+
     25. What do we use the change the spacing between lines?
+
+    We can change the spacing between the lines of text by adjusting the line-height property of an element.
+
     26. What do we use to change the spacing between letters?
+
+    We can change the spacing between letters of text by adjusting the letter-spacing property of an element.
+
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+
+    We can change the text of an element to all capital letters, all lowercase, and capitilize every first letter with the text-transform property. All capitals (text-transform: uppercase;) , lowercase (text-transform: lowercase;), and 1st letter capital (text-transform: capitalize;).
+
     28. How do I add a 1px border around my div that is dotted and black?
+
+    You can add a 1px border around a div that is dotted and black with the following syntax: div {border-width: thin; border-style:dotted; color:black;}
+
     29. How do I select everything on the page? 
+
+    You can use the * symbol to select all the elements on an HTML page.
+
     30. How do I write a comment in CSS?
+
+    The syntax /* */ can be used to make comments in CSS. It is used to communication information to other developers. 
+
     31. How do I find out what file I am in, when I am using the command line? 
+
+    You can use the pwd command in the terminal to see which directory you are in.
+
     32. Using the command line - how do I see a list of files/folders in my current folder?
+
+    You can use the ls command to see the list of files and folders in the current directory.
+
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+
+    You can use the rm command to delete files. The deleted files can not be recovered.
+
     34. Why should I use version control? 
+
+    A Version Control System allows for collaboration at scale, stores software properly, restores previous versions, tracks bugs, and serves as a backup. 
+
     35. How often should I commit to github?
+
+    On a fixed time basis it can be appropriate to commit every 20 minutes of work. It is best to commit on the basis of feature contributions.
+
     36. What is the command we would use to push our repo up to github? 
+
+    You can use the command git push -u origin branch-name to push our repo to GitHub. This will allow use to submit a Pull Request.
+
     37. Walk me through Lambda's git flow. 
+
+    Lambda's git flow process begins with forking our own version of a repo in GitHub. Using the terminal, you can clone your forked repo into to a directory. While inside the directory for your repo, you use the command git checkout -b 'firstname-lastname' to create a branch.
+    Once you begin working on the repo, you use the command git add. to add the changes and follow up with the command git commit -m "Type a helpful message" to commit the changes. The last step is to push the changes back into the GitHub repo using the command git push -u origin branch-name. Once the changes 
+    are updated in GitHub, you can submit a Pull Request to your branch-name.
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+
+    A block level element occupies the entire horizontal space of its parent element and vertical space equal to the height of its contents. An inline element does not start a on a new line and occupies the space bounded by the tags defining the element with out breaking the flow of content. 
+
     2. What happens when an element is positioned absolutely? 
+
+    When an element's position property has a value of absolute, it is positioned relative to the nearest positioned ancestor (instead of relative to the viewport like the fixed value). 
+    
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    
+    You can place the element in a div element and adjust the width of the div. 
+
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+
+    The following elements are block level by default: div, h1, p. The following elements are inline level by default: span, a. The following element is inline-block by default: button. 
+    
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
 
+    The CSS box model describes how elements are displayed by browsers. The content is surrounded by padding, then border, and finally margin. The standardization of this formatting model of HTML elements allows us to specify the dimensions of each block. 
+    The elements on a webpage are arranged by default according to the Normal Flow layout. The concepts of cascade, specificity, and inheritance will indicate how an element is stylized. 
 
 
    --> 
