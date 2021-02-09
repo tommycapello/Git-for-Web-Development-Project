@@ -22,22 +22,72 @@ link to finished codepen: https://codepen.io/tommycapello/pen/rNWMOGL
     Both the img and a tags have required attributes. For the img tag it is <img src=""> and for the a tag it is <a href="">.
 
     6. What do we put in the head of our HTML document? 
+
+    The head of an HTML document contains the metadata of the page. You can store links, styles, and scripts in the head of the document. 
+
     7. What is an id? 
+
+    The HTML attibute is an attribute used to uniquely identify an element. It is typically used by JavaScript for manipulation.
+
     8. What elements can I add an id to? 
+
+    You can use the id attribute for any HTML element.
+
     9. How many times can I use the same id on a page? 
+
+    You can only use an id once within the same HTML document.
+
     10. What is a class? 
+
+    A class is HTML attribute used to style the same group of elements.
+
     11. What elements can I add a class to? 
+
+    A class can be used on any HTML element.
+
     12. How many times can I use the same class on a page? 
+
+    There is not limit how many times you can use the same class. You can use the same class on different elements.
+
     13. How do I get my link to open in a new tab?
+
+    In order for a link to open in a new tab, you can use the <a> tab. The syntax is <a href="www.url.com" target="_blank" rel="noopener noreferrer">
+    
     14. What is the alt attribute in the image tag used for? 
+    
+    The alt attribute in the img tag is used to describe the image if it can't be displayed. It is used by screen readers for accessibility.  
+
     15. How do I reference an id?
+
+    You can reference an id using the syntax #idName. 
+    
     16. What is the difference between a section and a div
+
+    A section tag is a semantic tag becuase it provides information on what is including within it's contents. We would expect there to be a specific reason for the section to grouped together. 
+    The div tag is used primarily as a container for styling. It has not intrinsic meaning by itself.
+
     17. What is CSS used for? 
-    18. How to we select an element? Example - every h2 on the page
+
+    CSS is used to style the elements of a webpage. It is used to arrange the data in a way to communicate with an end user.
+
+    18. How to do select an element? Example - every h2 on the page
+
+    The proper syntax of selecting elements is by elementName {}. This will select any of the elements in the same category to be styled the same way. h2 {} would style all the h2 headings on the page.
+
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+
+    The difference between a class and id is that a class can be more than once on a HTML document. The id should only reference a unique element on the page. The class attribute can be use to style mulitple elements.
+
     20. How do we select classes in CSS?
-    21. How do we select a p element with a single class of “human””?
-    22. What is a parent child selector? When would this be useful? 
+
+    You can select a class in CSS by the .className {} syntax. The class will have to be named within the first tag of an HTML element.
+
+    21. How do we select a p element with a single class of “human”?
+
+    You should be able to select the p element by the .human {} syntax. This will style any "human" classes on the page. 
+
+    22. What is a parent child selector? When would this be useful?
+    
     23. How do you select all links within a div with the class of sidebar?
     24. What is a pseudo selector?
     25. What do we use the change the spacing between lines?
